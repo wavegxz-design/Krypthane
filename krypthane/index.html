@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="referrer" content="no-referrer" />
+  <meta name="description" content="Krypthane Security — Proyecto educativo de ciberseguridad. Documentación técnica, laboratorios controlados y enfoque ético." />
+  <title>Krypthane Security</title>
+
+  <style>
+    :root{
+      --bg:#0b0d0f;
+      --panel:#0f1316;
+      --text:#e6eef3;
+      --muted:#9aa5ad;
+      --accent:#2aa198;
+      --radius:12px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+      --sans: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      --max:1000px;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg),#050607);
+      color:var(--text);
+      font-family:var(--sans);
+      padding:2rem 1rem;
+      display:flex;
+      justify-content:center;
+    }
+
+    .container{max-width:var(--max);width:100%}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem}
+    .brand h1{margin:0;font-size:1rem}
+    .brand p{margin:0;color:var(--muted);font-size:.85rem}
+
+    nav a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:.8rem;
+      font-size:.9rem;
+    }
+    nav a:hover{color:var(--text)}
+
+    main{
+      background:var(--panel);
+      border-radius:var(--radius);
+      padding:1.25rem;
+      border:1px solid rgba(255,255,255,.03);
+    }
+
+    section{margin-bottom:1.2rem}
+    h2,h3{margin:.2rem 0}
+    p{margin:.4rem 0}
+    ul{padding-left:1.1rem}
+
+    .muted{color:var(--muted)}
+    footer{
+      margin-top:1rem;
+      font-size:.85rem;
+      color:var(--muted);
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:.5rem;
+    }
+
+    a:focus{outline:2px dashed var(--accent)}
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <div class="brand">
+    <h1>Krypthane</h1>
+    <p>Krypthane Security — Proyecto educativo</p>
+  </div>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#que">Qué hacemos</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#legal">Aviso legal</a>
+  </nav>
+</header>
+
+<main>
+
+<section id="inicio">
+  <h2>Investigación y aprendizaje en ciberseguridad</h2>
+  <p class="muted">
+    Krypthane Security es una iniciativa independiente enfocada en formación técnica,
+    documentación profesional y práctica responsable en entornos controlados.
+  </p>
+</section>
+
+<section id="sobre">
+  <h3>Sobre el proyecto</h3>
+  <p>
+    El proyecto tiene fines exclusivamente educativos e informativos.
+    No se ofrecen servicios comerciales ni actividades ofensivas a terceros.
+  </p>
+</section>
+
+<section id="que">
+  <h3>Qué hacemos</h3>
+  <ul>
+    <li>Documentación técnica reproducible</li>
+    <li>Laboratorios de ciberseguridad controlados</li>
+    <li>Buenas prácticas de hardening en Linux</li>
+    <li>Metodología ética y legal</li>
+  </ul>
+</section>
+
+<section id="contacto">
+  <h3>Contacto oficial</h3>
+
+  <p><strong>Correo institucional:</strong><br>
+    <a href="mailto:security@krypthane.io">security@krypthane.io</a>
+  </p>
+
+  <p><strong>WhatsApp institucional (informativo):</strong><br>
+    +52 1 452 201 3992
+  </p>
+
+  <p><strong>WhatsApp secundario (orientación general):</strong><br>
+    +1 418 800 6660
+  </p>
+
+  <p><strong>Instagram oficial:</strong><br>
+    <a href="https://www.instagram.com/krypthanesecurity" target="_blank" rel="noopener">
+      @krypthanesecurity
+    </a>
+  </p>
+
+  <p class="muted">
+    Estos canales se utilizan únicamente para comunicación institucional,
+    coordinación educativa y consultas generales.
+  </p>
+</section>
+
+<section id="legal">
+  <h3>Aviso legal</h3>
+  <p class="muted">
+    El contenido de este sitio es educativo e informativo.  
+    Está prohibido el uso de la información para actividades ilegales o no autorizadas.  
+    El uso del contenido es responsabilidad exclusiva del usuario.
+  </p>
+  <p class="muted">
+    Krypthane Security no ofrece servicios comerciales ni soporte técnico a terceros.
+  </p>
+</section>
+
+<footer>
+  <span>© <span id="year"></span> Krypthane Security</span>
+  <span>Contenido educativo — Uso responsable</span>
+</footer>
+
+</main>
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
